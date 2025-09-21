@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Spune browser-ului cum sa interpreteze caracterele e.g. :
+    daca am avea "ă" s-ar putea sa l interpreteze ca fiind "�" -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>CatPhotoApp</title>
   </head>
 
   <body>
@@ -84,7 +86,22 @@
           </fieldset>
           <fieldset>
             <legend>What's your cat personality?</legend>
-            <input type="checkbox" id="loving"> Loving
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              type="checkbox"
+              name="personality"
+              id="energetic"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
           </fieldset>
           <input
             type="text"
@@ -96,5 +113,11 @@
         </form>
       </section>
     </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
   </body>
 </html>
