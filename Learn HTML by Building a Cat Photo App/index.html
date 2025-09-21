@@ -61,6 +61,39 @@
       </section>
       <section>
         <h2>Cat Form</h2>
+        <form action="/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cant an outdoor or indoor cat?</legend>
+            <label
+              ><input
+                type="radio"
+                id="indoor"
+                name="indoor-outdoor"
+                value="indoor"
+              />
+              Indoor</label
+            >
+            <label>
+              <input
+                type="radio"
+                id="outdoor"
+                name="indoor-outdoor"
+                value="outdoor"
+              />Outdoor
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat personality?</legend>
+            <input type="checkbox" id="loving"> Loving
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo url"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
   </body>
